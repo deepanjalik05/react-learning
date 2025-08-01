@@ -5,18 +5,26 @@ import './App.css'
 
 function App() {
   //hooks
-  let [counter, setCounter] = useState(15)
+  let [counter, setCounter] = useState(0)
   //let counter = 15;
   const addValue = () =>{
     // console.log("value added", counter);
       //counter = counter+1;
+      if(counter<10){
       setCounter(counter +1);
-  }
-  
+      }else{
+        alert("value can't go above 10!");
+      }
+  };
+
   const removeValue = () =>{
     //counter =  counter - 1;
+    if(counter>0){
     setCounter(counter -1);
-  }
+    }else{
+      alert("value can't go below 0!");
+    }
+  };
 
   return (
     <>
