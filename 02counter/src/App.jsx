@@ -7,7 +7,7 @@ function App() {
   //hooks
   let [counter, setCounter] = useState(0)
   //let counter = 15;
-  const addValue = () =>{
+  const addValue = () =>{ 
     // console.log("value added", counter);
       //counter = counter+1;
       if(counter<10){
